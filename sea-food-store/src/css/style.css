@@ -1,54 +1,9 @@
 .order-enter {
-  -webkit-transform: translateX(-120%);
-          transform: translateX(-120%);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  max-height: 0;
-  padding: 0 !important;
-}
-.order-enter.order-enter-active {
-  max-height: 60px;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  padding: 2rem 0 !important;
-}
-.order-exit {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-.order-exit.order-exit-active {
-  -webkit-transform: translateX(120%);
-          transform: translateX(120%);
-  padding: 0;
-}
-.count-enter {
   background: #f00;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
 }
-.count-enter.count-enter-active {
+.order-enter tra,
+.order-enter.order-enter-active {
   background: #ff0;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-.count-exit {
-  background: #000;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-.count-exit.count-exit-active {
-  background: #008000;
-  -webkit-transform: translateY(-100%) scale(3);
-          transform: translateY(-100%) scale(3);
 }
 @font-face {
   font-family: "haymakerregular";
@@ -58,7 +13,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family:'blanchcaps_inline';
+  font-family: 'blanchcaps_inline';
   src: url("./fonts/blanch_caps_inline-webfont.eot");
   src: url("./fonts/blanch_caps_inline-webfont.eot?#iefix") format('embedded-opentype'), url("./fonts/blanch_caps_inline-webfont.woff") format('woff'), url("./fonts/blanch_caps_inline-webfont.ttf") format('truetype'), url("./fonts/blanch_caps_inline-webfont.svg#blanchcaps_inline") format('svg');
   font-weight: normal;
@@ -235,7 +190,7 @@ body {
   font-size: 2rem;
 }
 h1 {
-  font-family:'blanchcaps_inline', sans-serif;
+  font-family: 'blanchcaps_inline', sans-serif;
   text-align: center;
   font-weight: normal;
   margin: 0;
@@ -321,7 +276,7 @@ header.top h3:after {
   height: 90vh;
   max-width: 1500px;
   margin: 0 auto;
-  margin-top: 10vh;
+  margin-top: 5vh;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   -webkit-transform-style: preserve-3d;
@@ -520,7 +475,7 @@ input[type=submit] {
   border: 1px solid #000;
   font-weight: 600;
   font-size: 1.5rem;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   position: relative;
