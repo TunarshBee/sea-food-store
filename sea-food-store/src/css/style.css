@@ -1,11 +1,52 @@
 .order-enter {
   background: #f00;
+  transform: translateX(-120%);
+   transition: 0.5s;
+    max-height: 0;
+  padding: 0 !important;
 }
 .order-enter tra,
 .order-enter.order-enter-active {
   background: #ff0;
+   max-height: 60px;
+    transform: translateX(0);
+    padding: 2rem 0 !important;
 }
-@font-face {
+.order-exit{
+  transition: 0.5s;
+  transform: translateX(0);
+}
+  .order-exit tra,
+  .order-exit.order-exit-active{
+    transform: translateX(120%);
+    padding: 0;
+  }
+
+  .count-enter {
+    background: red;
+  transition: .5s;
+  transform: translateY(100%);
+  }
+  .count-enter tra,
+  .count-enter.order-enter-active {
+    background: yellow;
+    transform: translateY(0);
+  }
+  .count-exit{
+    background: ;
+    transform :translateY(0);
+    transition :.5s;
+    position: absolute;
+    left :0;
+    bottom: 0;
+  }
+  .count-exit tra,
+  .count-exit.order-exit-active{
+    background: green;
+    transform: translateY(-100%) scale(3);
+  }
+
+    @font-face {
   font-family: "haymakerregular";
   src: url("./fonts/haymaker-webfont.eot");
   src: url("./fonts/haymaker-webfont.eot?#iefix") format("embedded-opentype"), url("./fonts/haymaker-webfont.woff") format("woff"), url("./fonts/haymaker-webfont.ttf") format("truetype"), url("./fonts/haymaker-webfont.svg#haymakerregular") format("svg");
@@ -190,7 +231,7 @@ body {
   font-size: 2rem;
 }
 h1 {
-  font-family: 'blanchcaps_inline', sans-serif;
+  font-family: tribalcase,'blanchcaps_inline', sans-serif;
   text-align: center;
   font-weight: normal;
   margin: 0;
@@ -211,34 +252,42 @@ h2 {
 h3 {
   font-size: 3rem;
 }
+.tagline{
+  top: 1.7rem;
+  font-size: 19px;
+}
 header.top {
   text-align: center;
 }
 header.top h1 {
-  font-size: 14.4rem;
+  font-size: 13rem;
+  padding-left: 25rem;
   line-height: 0.7;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 header.top h1 .ofThe {
   display: -webkit-box;
   display: flex;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #f5a623;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
-  background: url("images/anchor.svg") center no-repeat;
+  align-items: center;
   background-size: cover;
   padding: 0 1rem;
+  background: url("images/anchor.svg") center no-repeat;
 }
 header.top h1 .ofThe .of {
   padding-right: 2rem;
   position: relative;
-  right: -0.5rem;
+  right: -.9rem;
+}
+header.top h1 .ofThe .the{
+  margin-left: 1.9rem;
 }
 header.top h3 {
   margin: 0;
