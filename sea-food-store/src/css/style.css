@@ -33,7 +33,7 @@
     transform: translateY(0);
   }
   .count-exit{
-    background: ;
+    background:magenta ;
     transform :translateY(0);
     transition :.5s;
     position: absolute;
