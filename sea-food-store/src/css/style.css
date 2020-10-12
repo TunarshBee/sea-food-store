@@ -7,7 +7,7 @@
 }
 .order-enter tra,
 .order-enter.order-enter-active {
-  background: #ff0;
+  background: #fff;
    max-height: 60px;
     transform: translateX(0);
     padding: 2rem 0 !important;
@@ -29,7 +29,7 @@
   }
   .count-enter tra,
   .count-enter.order-enter-active {
-    background: yellow;
+    background: rgb(255, 255, 255);
     transform: translateY(0);
   }
   .count-exit{
@@ -224,7 +224,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: #d4d4d4;
+  background:blue;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Open Sans', sans-serif;
@@ -233,6 +233,7 @@ body {
 h1 {
   font-family: tribalcase,'blanchcaps_inline', sans-serif;
   text-align: center;
+  color: #fff;
   font-weight: normal;
   margin: 0;
 }
@@ -260,8 +261,7 @@ header.top {
   text-align: center;
 }
 header.top h1 {
-  font-size: 13rem;
-  padding-left: 25rem;
+  font-size: 8rem;
   line-height: 0.7;
   display: -webkit-box;
   display: flex;
@@ -272,7 +272,7 @@ header.top h1 .ofThe {
   display: -webkit-box;
   display: flex;
   font-size: 2rem;
-  color: #f5a623;
+  color: #ffffff;
   -webkit-box-pack: center;
   justify-content: center;
   -webkit-box-align: center;
@@ -292,12 +292,12 @@ header.top h1 .ofThe .the{
 header.top h3 {
   margin: 0;
   font-size: 2rem;
-  color: #f5a623;
+  color: #ffffff;
   position: relative;
   display: inline-block;
 }
 header.top h3 span {
-  background: #fff;
+  background: blue;
   position: relative;
   z-index: 2;
   padding-left: 1rem;
@@ -307,7 +307,7 @@ header.top h3:before,
 header.top h3:after {
   display: block;
   z-index: 1;
-  background: #000;
+  background: rgb(255, 255, 255);
   position: absolute;
   width: 130%;
   height: 1px;
@@ -324,7 +324,7 @@ header.top h3:after {
   display: flex;
   height: 90vh;
   max-width: 1500px;
-  margin: 0 auto;
+  margin: 0% auto;
   margin-top: 5vh;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -335,7 +335,7 @@ header.top h3:after {
   -webkit-box-flex: 1;
           flex: 1 4 auto;
   padding: 2rem;
-  border: 1rem double #1a1a1a;
+  border: 1rem double #ffffff;
   position: relative;
   background: #fff;
   -webkit-transition: all 0.3s;
@@ -428,14 +428,18 @@ ul.order li span.count span {
 .total {
   padding: 2rem 0;
   font-size: 1.4rem;
-  border-bottom: 3px solid #000;
-  border-top: 3px double #000;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  border-top: 3px double rgb(255, 255, 255);
 }
 .total strong {
   float: right;
 }
 .order-title {
   text-align: center;
+}
+.order-wrap{
+  background-color: blue;
+  color: #fff;
 }
 .fish-edit {
   margin-bottom: 20px;
@@ -486,20 +490,24 @@ ul.order li span.count span {
           transform: translateZ(0);
 }
 .menu-fish {
-  border-bottom: 2px solid #000;
-  border-top: 1px solid #000;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  background-color: blue;
+  border-top: 1px solid rgb(255, 255, 255);
   padding-bottom: 2rem;
   padding-top: 2rem;
+  color:#fff;
   margin-bottom: 5px;
   clear: both;
   overflow: hidden;
 }
 .menu-fish p {
   margin: 0;
+  color:#fff;
   font-size: 1.8rem;
 }
 .menu-fish .fish-name {
   margin: 0;
+  color:#fff;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: justify;
@@ -509,6 +517,7 @@ ul.order li span.count span {
 }
 .menu-fish .price {
   font-size: 1.4rem;
+  color:#fff;
   -webkit-box-pack: end;
           justify-content: flex-end;
 }
@@ -517,11 +526,14 @@ ul.order li span.count span {
   width: 150px;
   margin-right: 1rem;
 }
+.menu{
+  background-color: blue;
+}
 button,
 input[type=submit] {
   text-transform: uppercase;
   background: none;
-  border: 1px solid #000;
+  border: 1px solid rgb(60, 11, 238);
   font-weight: 600;
   font-size: 1.5rem;
   font-family: 'Open Sans', sans-serif;
@@ -552,7 +564,7 @@ input[type=submit]:after {
   content: '';
   z-index: -1;
   display: block;
-  background: #000;
+  background: rgb(0, 24, 160);
   position: absolute;
   width: 100%;
   height: 0;
@@ -565,7 +577,7 @@ button:hover,
 input[type=submit]:hover,
 button:focus,
 input[type=submit]:focus {
-  color: #fff;
+  color: rgb(255, 255, 255);
   outline: 0;
 }
 button:hover:after,
@@ -624,7 +636,7 @@ input[type=submit].twitter:after {
   max-width: 500px;
   margin: 50px auto;
   padding: 2rem;
-  border: 2px solid #000;
+  border: 2px solid rgb(6, 6, 216);
 }
 .store-selector input,
 .store-selector button {
@@ -634,4 +646,11 @@ input[type=submit].twitter:after {
 .store-selector button[type="text"] {
   text-align: center;
   font-size: 3rem;
+  background-color:rgb(6, 6, 216);
+  border-radius: 2px;
+  color: #fff;
+}
+.login{
+  background-color: blue;
+  color: #fff;
 }
