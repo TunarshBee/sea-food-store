@@ -261,7 +261,7 @@ header.top {
   text-align: center;
 }
 header.top h1 {
-  font-size: 8rem;
+  font-size: 5.2rem;
   line-height: 0.7;
   display: -webkit-box;
   display: flex;
@@ -325,7 +325,7 @@ header.top h3:after {
   height: 90vh;
   max-width: 1500px;
   margin: 0% auto;
-  margin-top: 5vh;
+  margin-top: 8vh;
   -webkit-perspective: 1000px;
           perspective: 1000px;
   -webkit-transform-style: preserve-3d;
