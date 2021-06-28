@@ -5,7 +5,7 @@ const Login = (props)=>{
     return(
         <nav className="login">
             <h2>inventory login</h2>
-            <p>Sign in to access your store's inventory</p>
+            <p>It is only the Admin that can access the store's inventory</p>
             <button className="github" onClick={()=> props.authenticate('Github')}>
                 Login with Github
             </button>
