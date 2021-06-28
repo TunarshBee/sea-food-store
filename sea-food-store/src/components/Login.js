@@ -9,9 +9,6 @@ const Login = (props)=>{
             <button className="github" onClick={()=> props.authenticate('Github')}>
                 Login with Github
             </button>
-            <button className="facebook" onClick={()=> props.authenticate('Facebook')}>
-                Login with Facebook
-            </button>
         </nav>
     )
 }
