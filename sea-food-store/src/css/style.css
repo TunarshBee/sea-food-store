@@ -231,7 +231,7 @@ body {
   font-size: 2rem;
 }
 h1 {
-  font-family: tribalcase,'blanchcaps_inline', sans-serif;
+  font-family: 'blanchcaps_inline', sans-serif;
   text-align: center;
   color: #fff;
   font-weight: normal;
@@ -243,7 +243,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  font-family: 'haymakerregular', sans-serif;
+  font-family:  sans-serif;
 }
 h2 {
   text-align: center;
