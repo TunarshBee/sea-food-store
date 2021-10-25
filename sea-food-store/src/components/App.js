@@ -9,7 +9,7 @@ import Fish from "./Fish";
 class App extends React.Component {
   state = {
     fishes: {},
-    order: {},
+    order: {}
   };
   // componentDidMount() {
   //   const { params } = this.props.match;
