@@ -65,6 +65,7 @@ class App extends React.Component {
 
   loadSampleFishes = () => {
     this.setState({ fishes: sampleFishes });
+    console.log('loading sample fishes')
   };
 
   addToOrder = (key) => {
@@ -88,7 +89,7 @@ class App extends React.Component {
     return (
       <div className="catch-of-the-day">
         <div className="menu">
-          <Header tagline="Fresh Seafood Market" />
+          <Header tagline="Fresh Sea-food Market" />
           <ul className="fishes">
             {Object.keys(this.state.fishes).map((key) => (
               <Fish
